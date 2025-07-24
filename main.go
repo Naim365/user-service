@@ -112,7 +112,7 @@ func main() {
 	}()
 
 	// Set up HTTP handler
-	http.HandleFunc("/api/call-main", callMainServiceHello)
+	http.HandleFunc("/api/hello", callMainServiceHello)
 
 	port := os.Getenv("PORT")
 	if port == "" {
